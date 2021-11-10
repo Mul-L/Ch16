@@ -5,9 +5,9 @@ filename = '16.2\data\eq_data_1_day_m1.json'
 with open(filename) as f:
     all_data = json.load(f)
 
-readable_file = '16.2/data/readable_eq_data.json'
-with open(readable_file, 'w') as f:
-    json.dump(all_data, f, indent=4)
+# readable_file = '16.2\data\readable_eq_data.json'
+# with open(readable_file, 'w') as f:
+#     json.dump(all_data, f, indent=4)
 
 all_eq_dicts = all_data['features']
 
