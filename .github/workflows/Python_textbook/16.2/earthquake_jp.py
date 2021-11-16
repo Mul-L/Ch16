@@ -1,6 +1,8 @@
 import pandas as pd
 import plotly.express as px
 
+# Draw a scatter chart by JP_eq CSV file
+
 file = '16.2\data\japan_20190101-20211009_query.csv'
 
 data = pd.read_csv(file)
