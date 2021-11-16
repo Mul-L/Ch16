@@ -10,7 +10,10 @@ print(f"Total repositories: {res_dict['total_count']}")
 repo_dicts = res_dict['items']
 print(f"Repositories returned: {len(repo_dicts)}")
 
-repo_dict = repo_dicts[0]
-print(f"\nKey: {len(repo_dict)}")
-for key in sorted(repo_dict.keys()):
-    print(key)
+for repo in repo_dicts:
+    print(f"\nName: {repo['name']}")
+    print(f"Owner: {repo['owner']['login']}")
+    print(f"Stars: {repo['stargazers_count']}")
+    print(f"Repository: {repo['html_url']}")
+    print(f"Created: {repo['created_at']}")
+    print(f"Description: {repo['description']}")
